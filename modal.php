@@ -4,7 +4,7 @@
 
 <!-- Modal -->
 <div class="modal fade" id="myModal<?php echo $row['id_vehiculo']?>" role="dialog">
-    <div class="modal-dialog modal-sm">
+    <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
                 <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
