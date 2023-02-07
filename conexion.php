@@ -5,7 +5,7 @@ function conectar(){
     $pass="J&ye#Ve3*f8dYR~XP~8V(uAj0%Xs|Pe2";
 
     $bd="keylock";
-
+    # test
     $con=mysqli_connect($host,$user,$pass);
 
     mysqli_select_db($con,$bd);
