@@ -64,6 +64,7 @@ $row = mysqli_fetch_array($query);
                             <th></th>
                             <th></th>
                             <th></th>
+                            <th></th>
                         </tr>
                     </thead>
 
@@ -85,8 +86,11 @@ $row = mysqli_fetch_array($query);
 
                                 <th><button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal<?php echo $row['id_vehiculo']?>">Enviar</button></th>
 
+                                <th><button type="button" class="btn btn-success" data-toggle="modal" data-target="#Modal-qr<?php echo $row['id_vehiculo']?>">QR</button></th>
+
                                 <th><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modal-delete<?php echo $row['id_vehiculo']?>">Borrar</button></th>
 
+                                
                                 <!-- <th><a href="delete.php?id=<?php echo $row['id_vehiculo'] ?>" class="btn btn-danger">Eliminar</a></th> -->
 
 
@@ -97,6 +101,7 @@ $row = mysqli_fetch_array($query);
                             <?php include ("modal.php"); ?>  
                             <?php include ("modal-edit.php"); ?> 
                             <?php include ("modal-delete.php"); ?>
+                            <?php include ("modal-qr.php"); ?>
                             
 
                         <?php
