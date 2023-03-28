@@ -14,11 +14,11 @@
 
                     <div class="container ">
                         <?php
-
+                            $patente=$row['patente'];
 
                         //$texto="https://gama.wit.la/Cierre-centralizado/index.php?id_vehiculo=2";
 
-                        $texto = "https://gama.wit.la/Cierre-centralizado/index.html";
+                        $texto = "https://gama.wit.la/Cierre-centralizado/index.php?patente=$patente";
 
                         $url = "https://phpqrcode.sourceforge.net/qrsample.php?data=" . $texto . "&ecc=L&matrix=10";
 
@@ -33,6 +33,7 @@
                 <div class="modal-footer">
 
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <a href="pdf.php"><button class="impri">Download</button></a>
 
                 </div>
             </div>

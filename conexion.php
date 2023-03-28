@@ -11,5 +11,6 @@ function conectar(){
     mysqli_select_db($con,$bd);
 
     return $con;
+    echo "ok";
 }
 ?>
